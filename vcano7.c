@@ -50,7 +50,14 @@ int main(void)
 	//after the function completes it should have swapped expected with new value
 	printf("expected = %d, old value which was returned is %d \n",expected,valueReturned);
 	
+	printf("These are the values we have before swapping them aroound: \n");
+	printf("\nValue One = %d\nValue Two = %d\n\n", valueOne, valueTwo);
 
+	values_to_swap(&valueReturned, &expected, &valueOne, &valueTwo);
+
+	printf("We will first swap the Expected again:\n");
+	printf("Expected = %d, old value which was returned is %d\n",expected,valueReturned);
+	printf("These are the new values after being swapped:\nValue one: %d, Value two: %d\n", valueOne, valueTwo);
 
 
 	return EXIT_SUCCESS;
